@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <img src="./Imagenes/yo1.png" alt="Imagen principal" class="main-photo">
+        <div class="about-text">
+            <h1>Yesenia Sandoval Nuñez Vela</h1>
+            <p>¡Hola! Soy estudiante de Ingeniería de Sistemas apasionada por la tecnología y el desarrollo de software. Me encanta aprender y aplicar mis conocimientos en proyectos creativos que puedan resolver problemas del mundo real.</p>
+            <p>A lo largo de mi carrera, he adquirido habilidades en programación, diseño de bases de datos, y desarrollo de aplicaciones web. Mi interés se centra en áreas como la inteligencia artificial, la gestión de datos y la optimización de procesos.</p>
+            <p>Me considero una persona curiosa, con ganas de seguir aprendiendo y explorando nuevas tecnologías que me ayuden a crecer como profesional. En mi tiempo libre, disfruto investigando sobre tendencias tecnológicas y participando en proyectos
+                colaborativos.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Proyectos</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="./Imagenes/imagen1.jpg" alt="Proyecto 1" class="carousel-slide">
+                <img src="./Imagenes/imagen2.jpg" alt="Proyecto 2" class="carousel-slide">
+                <img src="./Imagenes/imagen3.jpg" alt="Proyecto 3" class="carousel-slide">
+                <img src="./Imagenes/imagen4.jpg" alt="Proyecto 4" class="carousel-slide">
+                <!-- Repite para el bucle -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Yesenia Sandoval Nuñez Vela. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

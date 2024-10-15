@@ -1,0 +1,200 @@
+/* Estructura General */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Una fuente más moderna y atractiva */
+    background-color: #050505;
+    color: white;
+}
+
+header {
+    background-color: #610d46;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: fuchsia;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2.2em;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: white;
+}
+
+.profile-image {
+    width: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    /* Mantiene la proporción */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    /* Personaliza la forma de recorte */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área definida */
+}
+
+
+/* Sección Sobre Mí */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-photo {
+    width: 300px;
+    background: none;
+    border-radius: 0;
+    transition: transform 0.3s;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    color: fuchsia;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+
+/* Flexbox para Responsive Design */
+
+.projects-section,
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.projects-section h2,
+.contact-section h2 {
+    font-size: 2.5em;
+    color: fuchsia;
+    margin-bottom: 30px;
+}
+
+
+/* Carrusel */
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    /* Oculta el desbordamiento */
+    margin: 40px auto;
+    /* Centra el carrusel */
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Transición suave entre las imágenes */
+    width: calc(300px * 4);
+    /* Ajusta el ancho para que incluya todas las imágenes */
+}
+
+.carousel-slide {
+    min-width: 300px;
+    /* Ajusta el tamaño de las imágenes */
+    margin-right: 15px;
+    /* Espacio entre las imágenes */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /* Sombra para destacar */
+}
+
+
+/* Animación del carrusel */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* Formulario de Contacto */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: fuchsia;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff00ff;
+}
+
+footer {
+    background-color: #2c2c2c;
+    /* Color de fondo */
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrado del texto */
+    color: white;
+    /* Color del texto */
+    font-size: 0.9em;
+    /* Tamaño de fuente */
+    position: relative;
+    /* Permite ajuste en diferentes pantallas */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra superior */
+}
